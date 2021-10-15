@@ -1,0 +1,746 @@
+/* ▼------トップ-------▼ */
+
+
+.head-slider img{
+    width:375px;
+    height:215px;
+}
+
+.slick-dots{
+	position: absolute;
+	bottom: 10.9px;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	display:flex;
+	justify-content: center;
+}
+
+.slick-dots button{
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.slick-dots button::before{
+	content: "";
+	display:block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 50%;
+	background:#ffffff;
+}
+
+.slick-dots .slick-active button::before{
+	background: #ff4343;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	cursor: pointer;
+}
+
+
+/* ▼------最新情報-------▼ */
+
+
+article{
+    width:325px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: serif;
+}
+
+article h2{
+    text-align: center;
+    margin-top:59.1px;
+    margin-bottom: 30px;
+}
+
+article h2 , h3, p{
+    color:#ffffff;
+}
+
+article section{
+    margin-bottom: 30px;
+}
+
+article p{
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.article-date span{
+    margin-left:14px;
+    font-weight: lighter;
+}
+
+.new-article:after{
+    content:"NEW";
+    font-size:10px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    padding:3px;
+    margin-left:10px;
+}
+
+
+article h3{
+    text-decoration : underline;
+}
+
+.article-title{
+    font-size:16px;
+}
+
+
+/* ▼------わいず祭りについて-------▼ */
+
+
+.fes-info{
+    background-color: #840E0E;
+    transform: skew(0,-10deg);	
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; 疑似要素を使う時に使うかも？*/
+    z-index:10;
+}
+
+.info-text{
+    color:#FFFFFF;
+    transform: skew(0,10deg);
+    text-align: center;	
+    font-family: serif;
+    margin-bottom:60px;
+}
+
+.info-text h2{
+    font-size: 20px;
+    margin-top:90px;
+    margin-bottom: 30px;
+}
+
+.info-text p{
+    font-size:14px;
+}
+
+.info-text a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    padding:7px 42.4px 7px 10px;
+    border:1px solid #ffffff;
+    margin-bottom: 90px;
+    margin-top:60px;
+}
+
+.info-text span{
+    position: absolute;
+    padding-left: 20px;
+}
+
+.bg-illust{
+    width: 100%;
+    height:300px;
+    z-index:0;
+    margin-top:-40px;
+    margin-bottom:-40px;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-image: url(common/img/top_eye-catching-01.jpeg);
+}
+
+.bg-illust2{
+    width: 100%;
+    height:300px;
+    z-index:0;
+    margin-top:-40px;
+    margin-bottom:-40px;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-image: url(common/img/top_eye-catching-02.jpeg);
+}
+
+
+/* ▼------屋台一覧-------▼ */
+
+
+.shop-info .shop-text{
+    transform: skew(0,-10deg);
+}
+
+.shop-info{
+    background-color: #840E0E;
+    transform: skew(0,10deg);	
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; 疑似要素を使う時に使うかも？*/
+    z-index:10;
+    padding-bottom: 80px;
+}
+
+.shop-slider{
+    width:100%;
+    transform: skew(0,-10deg);
+}
+
+.shop-slider img{
+    width:120px;
+    height:80px;
+}
+
+.shop-text{
+    color:#FFFFFF;
+    transform: skew(0,10deg);
+    text-align: center;	
+    font-family: serif;
+}
+
+.shop-text h2{
+    font-size: 20px;
+    margin-top:90px;
+    margin-bottom: 30px;
+}
+
+.shop-text p{
+    font-size:14px;
+    margin-bottom:60px;
+}
+
+.shop-text a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    padding:7px 42.4px 7px 10px;
+    border:1px solid #ffffff;
+    margin-bottom: 90px;
+}
+
+.shop-text span{
+    position: absolute;
+    padding-left: 20px;
+}
+
+
+/* ▼------ブログ-------▼ */
+
+
+.blog{
+    transform: skew(0,-10deg);	
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:10;
+    background-color: black;
+}
+
+.blog-container{
+    transform: skew(0,10deg);
+    font-family: serif;
+    text-align: center;
+}
+
+.blog-container h2{
+    font-size: 20px;
+    margin-top:90px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.blog-box{
+    width:325px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d5d5d5;
+    margin-bottom:30px;
+    padding:25px 25px 30px;
+}
+
+.blog-box img{
+    width:275px;
+    height:190px;
+    margin-bottom:10px; /* 元来は14px、微妙な余白の削除方法再確認 */
+}
+
+.blog-title{
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.blog-text{
+    width:275px;
+    font-size: 14px;
+    text-align: left;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 5;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.blog-text p{
+    color: #000000;
+}
+
+.blog-container a{
+    margin-top:30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    padding:7px 42.4px 7px 10px;
+    border:1px solid #ffffff;
+    margin-bottom: 90px;
+}
+
+.blog-container span{
+    position: absolute;
+    padding-left: 20px;
+}
+
+/* ▼------アクセス-------▼ */
+
+.access{
+    background-color: #840E0E;
+    transform: skew(0,-10deg);	
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: serif;
+    padding-bottom:90px;
+}
+
+.access h2{
+    font-size: 20px;
+    margin-top:90px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:#FFFFFF;
+    transform: skew(0,10deg);
+}
+
+iframe{
+    transform: skew(0,10deg);
+    text-align:center;
+    margin:0 25px 30px 25px;
+    /* margin-bottom:30px; */
+    width:325px;
+    height:244px;
+}
+
+.access-text{
+    color:#FFFFFF;
+    transform: skew(0,10deg);
+    text-align: left;	
+    width:325px;
+    margin:0 25px;
+}
+
+.access-text p{
+    font-size:14px;
+    margin-bottom:30px;
+}
+
+.access-icon{
+    width: 77px;
+    height:30px;
+    background-color: #151515;
+    position: relative;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom:14px;
+}
+
+.access-icon p{
+    position:absolute;
+    top:5.5px;
+    left:5.5px;
+}
+
+
+
+/* -------------------------------------------------------------- */
+               /* ▼------ここからPC用のCSS-------▼ */
+/* -------------------------------------------------------------- */
+
+@media screen and (min-width: 1000px){
+
+br{
+    display:none;
+}
+
+.order1{
+    order: 1;
+  }
+
+.order2{
+    order: 2;
+}
+
+h2{
+    font-weight: normal;
+}
+
+
+/* ▼------ヘッダー-------▼ */
+
+.head-slider{
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-slider img{
+    width:100%;
+    height:auto;
+}
+
+
+/* ▼------最新情報-------▼ */
+
+
+article{
+    width:1000px;
+    margin-bottom:200px;
+}
+
+article h2{
+    margin-top:90px;
+    margin-bottom:60px;
+    font-size:32px;
+}
+
+article p{
+    margin-bottom:0;
+    font-size:16px;
+}
+
+article section{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:16px;
+}
+
+
+/* ▼------わいず祭りについて-------▼ */
+
+
+.fes-info{
+    transform: skew(0,-5deg);	
+}
+
+.info-text{
+    display: flex;
+    transform: skew(0,5deg);
+    width:1000px;
+    text-align: left;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top:60px;
+    margin-bottom:100px;
+    position:relative;
+}
+
+.info-text h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:60px;
+    margin-top:80px;
+}
+
+.info-text p{
+    font-size:20px;
+}
+
+.info-container p:last-of-type{
+    margin-bottom:66.5px;
+}
+
+.info-container{
+    max-width:475px;
+}
+
+.jump-button{
+    text-align: center;
+}
+
+.info-text a{
+    font-size: 20px;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.info-text span{
+    padding-left: 10px;
+}
+
+.bg-illust, .bg-illust2{
+    height:800px;
+    margin-top:-80px;
+    margin-bottom:-150px;
+}
+
+.pc-photo{
+    display:flex;
+}
+
+.pc-ph1{
+    position:absolute;
+    width:200px;
+    height:450px;
+    background-image: url(common/img/top_about01.png);
+    background-size: cover;
+    top:33px;
+    bottom:68px;
+    left:525px;
+    right:275px;
+    z-index: 10;
+}
+
+.pc-ph2{
+    position:absolute;
+    width:200px;
+    height:450px;
+    background-image: url(common/img/top_about02.png);
+    background-size: cover;
+    top:79px;
+    bottom:22px;
+    left:672px;
+    right:128px;
+    z-index: 5;
+}
+
+.pc-ph3{
+    position:absolute;
+    width:200px;
+    height:450px;
+    background-image: url(common/img/top_about03.png);
+    background-size: cover;
+    top:0;
+    bottom:101px;
+    left:800px;
+    z-index: 1;
+}
+
+
+/* ▼------屋台一覧-------▼ */
+
+.shop-info .shop-text{
+    transform: skew(0,-5deg);
+}
+
+.shop-info{
+    transform: skew(0,5deg);	
+}
+
+.shop-text{
+    color:#FFFFFF;
+    transform: skew(0,5deg);
+    font-family: serif;
+    width:1000px;
+    text-align: left;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top:60px;
+}
+
+.shop-text h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:60px;
+    margin-top:80px;
+}
+
+.shop-text p{
+    text-align: center;
+    font-size:20px;
+    margin-bottom:0;
+}
+
+.shop-container{
+    max-width:690px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.shop-slider{
+    max-width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+    transform: skew(0,-5deg);
+    margin-bottom:95px;
+}
+
+.shop-slider img{
+    width:200px !important;        /* ※element.styleが効いてしまって指定できない/importantで無理やり */
+    height:136px !important;
+}
+
+.shop-text a{
+    font-size:20px;
+    margin-top:60px;
+}
+
+
+/* ▼------ブログ-------▼ */
+
+
+.blog{
+    transform: skew(0,-5deg);	
+}
+
+.blog-container{
+    transform: skew(0,5deg);
+}
+
+.blog-container h2{
+    font-size: 32px;
+    margin-top:100px;
+    margin-bottom: 60px;
+}
+
+.blog-box{
+    width:1000px;
+    padding:25px 25px 35px;
+    display:flex;
+}
+
+.blog-box img{
+    width:250px;
+    height:175px;
+    margin-right:25px;
+}
+
+.pc-view{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-title{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.blog-text{
+    font-size: 16px;
+    width:100%;
+}
+
+.blog-container a{
+    margin-top:30px;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+/* ▼------アクセス-------▼ */
+
+.access{
+    transform: skew(0,-5deg);	
+}
+
+.access h2{
+    font-size: 32px;
+    margin-top:100px;
+    margin-bottom: 60px;
+    transform: skew(0,5deg);
+}
+
+.pc-view2{
+    display:flex;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pc-view3{
+    margin-bottom:30px;
+}
+
+iframe{ /* block要素を突き抜けて表示される理由？ */
+    transform: skew(0,5deg);
+    text-align: start;
+    margin:45px 0 200px 60px;
+    width:430px;
+    height:323px;
+}
+
+.access-text{
+    transform: skew(0,5deg);
+    width:510px;
+}
+
+.access-info{
+    display: flex;
+    position:relative;
+}
+
+.access-info::after{
+    content:"";
+    display:block;
+    width:510px;
+    height:1px;
+    background-color:#000000;
+    position:absolute;
+    bottom:0;
+ }
+
+.access-text p{
+    font-size:16px;
+    margin-bottom:0;
+    white-space: nowrap;
+}
+
+.access-text p:last-child{
+    margin-bottom:0px;
+}
+
+.access-detail{
+    padding-top:5px;
+    margin-left:16px;
+}
+
+.access-icon{
+    width: 91px;
+    margin-bottom:0;
+}
+
+.access-icon p{
+    vertical-align: bottom;
+    margin-left: 7px;
+}
+
+
+
+
+}
+

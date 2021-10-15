@@ -1,0 +1,230 @@
+body{
+    color:#d5d5d5;
+    font-family: serif;
+}
+
+
+/* ------トップ画像------ */
+
+
+.about-title{
+    height:215px; /* 画像がお手本より横長？ */
+    width: 100%;
+    background: url(../common/img/about_fv.png) no-repeat center/cover;
+    padding-top:87px;
+    margin-bottom:60px;
+}
+
+.about-title p{
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    padding:10px 0;
+}
+
+
+/* ------説明文------ */
+
+
+.text-section{
+    width:100%;
+    transform: skew(0,-10deg);
+    z-index: 10;
+    padding-bottom:40px;
+    background-color: black;
+}
+
+.text-container{
+    transform: skew(0,10deg);	
+    width:325px;
+    height:185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-container p{
+    font-size: 14px;
+    text-align:left;
+}
+
+.bg-illust{
+    width: 100%;
+    height:300px;
+    z-index:0;
+    margin-top:-40px;
+    margin-bottom:-40px;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-image: url(../common/img/access_eye-catching.jpeg);
+}
+
+
+/* ------メイン------ */
+
+
+.access-section{
+    width:100%;
+    transform: skew(0,10deg);
+    z-index: 10;
+    padding:40px 0 90px;
+    background-color: black;
+
+}
+
+.access-section h2{
+    transform: skew(0,-10deg);
+    text-align: center;
+    font-size:20px;
+    margin-bottom:60px;
+}
+
+.access-container{
+    transform: skew(0,-10deg);	
+    width:325px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+}
+
+iframe{
+    text-align: center;
+    margin-bottom:60px;
+    width:325px;
+    height:244px;
+}
+
+.access-text{
+    color:#FFFFFF;
+    text-align: left;	
+}
+
+.access-text p{
+    margin-bottom:30px;
+}
+
+.access p:last-child{
+    margin-bottom:90px;
+}
+
+.access-icon{
+    width: 77px;
+    height:30px;
+    background-color: #840E0E;
+    position: relative;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom:14px;
+}
+
+.access-icon p{
+    position:absolute;
+    top:5.5px;
+    left:5.5px;
+}
+
+/* -------------------------------------------------------------- */
+               /* ▼------ここからPC用のCSS-------▼ */
+/* -------------------------------------------------------------- */
+
+@media screen and (min-width: 1000px){
+
+br{
+    display: none;
+}
+
+
+/* ------トップ画像------ */
+
+
+.about-title{
+    height:360px;
+    width: 1000px;
+    padding-top:148px;
+    margin-bottom:90px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.about-title p{
+    font-size: 32px;
+}
+
+
+/* ------説明文------ */
+
+
+.text-section{
+    transform: skew(0,-5deg);
+    padding-bottom: 200px;
+}
+
+.text-container{
+    transform: skew(0,5deg);	
+    width:900px;
+    font-size:20px;
+}
+
+.text-container p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-container p:last-of-type{
+    margin-top:20px;
+}
+
+.bg-illust{
+    height:800px;
+    margin-top:-55px;
+    margin-bottom:-55px;
+}
+
+/* ------メイン------ */
+
+
+.access-section{
+
+    transform: skew(0,5deg);
+    padding:200px 0 200px;
+}
+
+.access-section h2{
+    transform: skew(0,-5deg);
+    font-size:32px;
+}
+
+.access-container{
+    transform: skew(0,-5deg);	
+    width:1000px;
+    font-size:16px;
+}
+
+iframe{
+    margin-bottom:120px;
+    width:1000px;
+    height:751px;
+}
+
+.access-text p{
+    vertical-align: bottom;
+}
+
+.access-info{
+    display:flex;
+}
+
+.access-detail{
+    padding-top:2.5px;
+    margin-left: 16px;
+}
+
+.access-icon{
+    width: 91px;
+    margin-bottom:30px;
+}
+
+.access-icon p{
+    top:2.5px;
+}
+
+} 

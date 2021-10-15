@@ -1,0 +1,305 @@
+body{
+    color:#d5d5d5;
+    font-family: serif;
+}
+
+/* ------トップ画像------ */
+
+
+.about-title{
+    height:215px; /* 画像がお手本より横長？ */
+    width: 100%;
+    background: url(../common/img/blog_fv.png) no-repeat center/cover;
+    padding-top:87px;
+    margin-bottom:60px;
+}
+
+.about-title p{
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    padding:10px 0;
+}
+
+/* ------説明文------ */
+
+
+.text-section{
+    width:100%;
+    transform: skew(0,-10deg);
+    z-index: 10;
+    padding-bottom:40px;
+    background-color: black;
+}
+
+.text-container{
+    transform: skew(0,10deg);	
+    width:325px;
+    height:185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-container p{
+    font-size: 14px;
+    text-align:left;
+}
+
+.bg-illust{
+    width: 100%;
+    height:300px;
+    z-index:0;
+    margin-top:-40px;
+    margin-bottom:-40px;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-image: url(../common/img/blog_eye-catching.jpeg);
+}
+
+
+/* ------メイン------ */
+
+.column-section{
+    transform: skew(0,10deg);	
+    background-color: black;
+    padding-bottom:90px;
+    padding-top:80px;
+}
+
+.column-container{
+    width:325px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: skew(0,-10deg);	
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category p{
+    padding:4.5px 16px;
+    border:1px solid #FFFFFF;
+    margin-bottom:20px;
+}
+
+.category p:first-child{
+    background-color: #840E0E;
+    border:none;
+}
+
+.category p:last-child{
+    margin-bottom:57px;
+}
+
+.category:after{ /* ※flex二行目の整列 */
+    content:"";
+    display:block;
+    width: 32%;
+    height:0;
+}
+
+.contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.contents-item{
+    height:220px;
+    background-color:rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+}
+
+.contents-item p:first-child{
+    font-size: 12px;
+    text-align: right;
+    margin-top:112px;
+    margin-bottom:14px;
+}
+
+.contents-item p:last-child{
+    font-size: 14px;
+    text-align: left;
+    margin:0 10px;
+}
+
+
+.contents-item:nth-child(1){
+    background-image:url(..//common/img/blog_item-01.png);
+    background-size: cover;
+}
+
+.contents-item:nth-child(2){
+    background-image:url(..//common/img/blog_item-02.png);
+    background-size: cover;
+}
+
+.contents-item:nth-child(3){
+    background-image:url(..//common/img/blog_item-03.png);
+    background-size: cover;
+}
+
+.contents-item:nth-of-type(n+4):nth-of-type(-n+7){
+    background-image:url(..//common/img/blog_item-04.png);
+    background-size: cover;
+}
+
+.contents-item:nth-child(8){
+    background-image:url(..//common/img/blog_item-05.png);
+    background-size: cover;
+}
+
+.page_number a{
+    padding:10px;
+    max-width:20px;
+    text-decoration: none;
+    color: #F7F7F7;
+    border: 1px solid #FFFFFF;
+    font-size:14px;
+    font-family: serif;
+}
+
+.page_number a:nth-child(6){
+    border: none;
+    padding: 0;
+}
+
+.page_number a:nth-child(n+2){
+    margin-left:8px;
+}
+
+/* -------------------------------------------------------------- */
+               /* ▼------ここからPC用のCSS-------▼ */
+/* -------------------------------------------------------------- */
+
+@media screen and (min-width: 1000px){
+
+br{
+    display: none;
+}
+
+/* ------トップ画像------ */
+
+
+.about-title{
+    height:360px;
+    width: 1000px;
+    padding-top:148px;
+    margin-bottom:90px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.about-title p{
+    font-size: 32px;
+}
+
+
+/* ------説明文------ */
+
+
+.text-section{
+    transform: skew(0,-5deg);
+    padding-bottom: 200px;
+}
+
+.text-container{
+    transform: skew(0,5deg);	
+    width:900px;
+    font-size:20px;
+}
+
+.text-container p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-container p:last-of-type{
+    margin-top:20px;
+}
+
+.bg-illust{
+    height:800px;
+    margin-top:-55px;
+    margin-bottom:-55px;
+}
+
+
+/* ------メイン------ */
+
+
+.column-section{
+    transform: skew(0,5deg);	
+    padding-top:200px;
+}
+
+.column-container{
+    width:1000px;
+    transform: skew(0,-5deg);	
+    
+}
+
+.category{
+    justify-content: center;
+    margin-bottom:60px;
+}
+
+.category p{
+    padding:6px 20px;
+    font-size:20px;
+    margin-bottom:0px;
+    margin-right:30px;
+}
+
+.category p:last-child{
+    margin-bottom:0;
+    margin-right:0;
+}
+
+.category:after{ /* ※flex二行目の整列指定を削除 */
+    display:none;
+}
+
+.contents{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:45px;
+    margin-bottom:120px;
+}
+
+.contents-item{
+    height:288px;
+}
+
+.contents-item p:first-child{
+    margin-top:180px;
+    margin-bottom:15px;
+    margin-right: 16px;
+}
+
+.contents-item p:last-child{
+    font-size: 16px;
+    margin:0 16px;
+}
+
+.page_number{
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    margin-bottom:200px;
+}
+
+.page_number a{
+    font-size:20px;
+}
+
+.page_number a:nth-child(2){
+    border: none;
+    background-color: #840E0E;
+}
+
+}
